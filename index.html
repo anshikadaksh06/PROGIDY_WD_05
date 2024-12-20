@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="weather-background"></div>
+    
+    <!-- Centered Weather Container -->
+    <div class="weather-container">
+        <h1 class="app-title">🌤️ Weather App ☁️</h1>
+        
+        <!-- Search Section -->
+        <div class="search-section">
+            <input type="text" id="cityInput" placeholder="Enter city name..." />
+            <button onclick="fetchWeatherByCity()">🔍 Search</button>
+            <button onclick="fetchWeatherByLocation()">📍 Current Location</button>
+        </div>
+
+        <!-- Weather Info Display -->
+        <div class="weather-card" id="weatherCard">
+            <h2 id="cityName">City Name</h2>
+            <div class="temp-icon">
+                <p id="temperature">--°C</p>
+                <img id="weatherIcon" src="" alt="Weather Icon" />
+            </div>
+            <p id="weatherDescription">Weather Description</p>
+            <p id="humidity">Humidity: --%</p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
